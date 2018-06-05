@@ -6,7 +6,7 @@ Please see the LICENSE file for copyright and license information.
 
 ## Run locally
 
-1. Create a new Watson Work application [here](https://developer.watsonwork.ibm.com/apps). Make note of the App ID and secret, as you'll need to provide them to your application. 
+1. Create a new Watson Work application [here](https://developer.watsonwork.ibm.com/apps). Make note of the App ID and secret, as you'll need to provide them to your application.
 
 1. Copy the `local.env.sample` file to `local.env`. Change the APP_ID and APP_SECRET to the ones you created above.
 
@@ -20,13 +20,13 @@ Please see the LICENSE file for copyright and license information.
 npm install
 ```
 
-1. Start the application locally:
+6. Start the application locally:
 
 ```
 npm start
 ```
 
-1. Navigate to the URL for the application in your browser. 
+7. Navigate to the URL for the application in your browser. 
 
 ## Run on Bluemix
 

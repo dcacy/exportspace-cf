@@ -1,0 +1,23 @@
+{
+  "name": "dpc-exportspace",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Darren Cacy",
+  "dependencies": {
+    "archiver": "^2.1.1",
+    "body-parser": "^1.18.3",
+    "cfenv": "^1.1.0",
+    "cookie-session": "^2.0.0-beta.3",
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "stream": "0.0.2",
+    "url": "^0.11.0",
+    "watsonworkspace-bot": "^2.0.6"
+  }
+}

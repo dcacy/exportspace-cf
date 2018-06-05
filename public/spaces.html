@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Workspace Explorer</title>
+
+		<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"></link>
+		<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="/css/ibm-type.min.css">
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/spaces.css"></link>
+		<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+	</head>
+	<body>
+
+  		<!-- error message display -->
+		<div style="color:red;margin:10px;" id="error"></div>
+		<div id="loginMessage" style="display:none;margin:10px;">Would you like to <a href="/login">start over</a>?</div>
+		<div style="display:none;" id="errorMessage" data-notification class="bx--inline-notification bx--inline-notification--error" role="alert">
+			<div class="bx--inline-notification__details">
+				<svg class="bx--inline-notification__icon" width="16" height="16" viewBox="0 0 16 16" fill-rule="evenodd">
+					<path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zM5.1 13.3L3.5 12 11 2.6l1.5 1.2-7.4 9.5z"></path>
+				</svg>
+				<div class="bx--inline-notification__text-wrapper">
+					<p class="bx--inline-notification__title">An error has occurred..</p>
+					<p id="loginErrorSubtitle" class="bx--inline-notification__subtitle">Your session may have timed out. <a href="/">Start over?</a></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- loading image -->
+		<div id="loadingWrapper" style="display:none;">
+			<div class="bx--loading-overlay">
+			  <div data-loading class="bx--loading">
+			    <svg class="bx--loading__svg" viewBox="-75 -75 150 150">
+			      <title>Loading</title>
+			      <circle cx="0" cy="0" r="37.5" />
+			    </svg>
+			  </div>
+			</div>
+		</div>
+
+
+		<div id="appWrapper">
+			<!-- list of spaces -->
+			<div id="spacesTableWrapper" style="display:none;">
+				<div id="spacesTableHeader" class="tableHeader">Spaces:</div>
+				<table class="table compact stripe hover" id="spacesTable"></table>
+		  </div>
+		</div>
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="/js/date.format.js"></script>
+		<script type="text/javascript" src="/js/spaces.js"></script>
+	</body>
+</html>

@@ -19,7 +19,7 @@ if (process.env.VCAP_APPLICATION) {
 const botFramework = require('watsonworkspace-bot');
 botFramework.level(process.env.WW_SDK_LOG_LEVEL);
 // serve files from public
-botFramework.express.use(express.static(__dirname + '/public'));
+botFramework.express.use(express.static(__dirname + '/docs'));
 // use session
 botFramework.express.use(session({
   name: 'dpcsession',
